@@ -1,0 +1,73 @@
+@media (max-width:991.99px){
+    :root{
+        /* font-size */
+    --lx:36pt;
+    --lg:32pt;
+    --semilg:28pt;
+    --smalllg:28pt;
+    --md:24pt;
+    --sm:16pt;
+    --smh:14pt;
+    --xs:10pt;
+
+    /* font-weight */
+    --black:900;
+    --bold:700;
+    --semiBold:500;
+    --regular:400;
+    --light:200;
+
+    /* padding margin */
+    --spacelx: 2.0rem !important;
+    --spacelg: 0rem !important;
+    --spacemd: 1rem !important;
+    --spacesm: .5rem !important;
+}
+.desktop_content_md{
+    display: none;
+}
+.apps_features header{
+    text-align: center;
+}
+    }
+@media (max-width:766.99px){
+.slider{
+    text-align: center;
+}
+.desktop_content{
+    display: none;
+}
+.slider .watch_v {
+    display: block;
+    padding: var(--spacelx) 0;
+}
+span.slider_spanflex_property {
+    font-size: var(--xs);
+}
+/* top_move_heading */
+@keyframes top_move_heading {
+    from {
+        transform: translateX(0%) rotate(45deg) translateY(10px);
+    }
+
+    to {
+        transform: translateX(600%) rotate(45deg) translateY(100px) translate3d(1, 2.0, 3.0, 10deg);
+    }
+}
+/* animation_top_bottom */
+@keyframes bottom_move_heading {
+    from {
+        transform: translateY(-20px) translateX(100px);
+    }
+
+    to {
+        transform: translateY(-80px) translateX(100px);
+    }
+}
+/* companies_logo */
+
+.companies_logo .company_logo_icon {
+    margin: 0 .5rem;
+    padding: 0 2px;
+}
+    }
