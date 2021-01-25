@@ -1,3 +1,29 @@
+/* (max-width: 1199.99px) */
+@media (max-width: 1199.99px){
+    /* padding margin */
+    :root{
+    --spacelxx : 4.5rem !important;   
+        }
+    /* bootstrap.min class overwrite */
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+        position: relative;
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+/* (max-width:991.99px) */
+@media (min-width: 767.99px) and (max-width: 991.99px){
+    .Smart_jackpots .col-lg-4 .Smart_jackpots_main {
+        max-width: 75%;
+    }
+    .Smart_jackpots .col-lg-4{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 @media (max-width:991.99px){
     :root{
         /* font-size */
@@ -18,56 +44,100 @@
     --light:200;
 
     /* padding margin */
+    --spacelxx: 4.5rem !important;
     --spacelx: 2.0rem !important;
     --spacelg: 0rem !important;
     --spacemd: 1rem !important;
     --spacesm: .5rem !important;
-}
-.desktop_content_md{
-    display: none;
-}
-.apps_features header{
-    text-align: center;
-}
     }
+
+    .desktop_content_md{
+        display: none;
+    }
+
+    .apps_features header{
+        text-align: center;
+    }
+    
+    
+}
+
+/* (max-width:766.99px) */
 @media (max-width:766.99px){
-.slider{
-    text-align: center;
-}
-.desktop_content{
-    display: none;
-}
-.slider .watch_v {
-    display: block;
-    padding: var(--spacelx) 0;
-}
-span.slider_spanflex_property {
-    font-size: var(--xs);
-}
-/* top_move_heading */
-@keyframes top_move_heading {
-    from {
-        transform: translateX(0%) rotate(45deg) translateY(10px);
+    button.button{
+        margin: 1rem 0;
+    }
+    :root{
+        --spacelxx : 2.5rem !important;  
     }
 
-    to {
-        transform: translateX(600%) rotate(45deg) translateY(100px) translate3d(1, 2.0, 3.0, 10deg);
+    .slider{
+        text-align: center;
     }
-}
-/* animation_top_bottom */
-@keyframes bottom_move_heading {
-    from {
-        transform: translateY(-20px) translateX(100px);
+    .Smart_jackpots{
+        text-align: center;
     }
 
-    to {
-        transform: translateY(-80px) translateX(100px);
+    .desktop_content{
+        display: none;
     }
-}
+
+    .slider .watch_v {
+        display: block;
+        padding: var(--spacelx) 0;
+    }
+
+    span.slider_spanflex_property {
+        font-size: var(--xs);
+    }
+    
+    /* top_move_heading */
+    @keyframes top_move_heading {
+        from {
+            transform: translateX(0%) rotate(45deg) translateY(10px);
+        }
+
+        to {
+            transform: translateX(600%) rotate(45deg) translateY(100px) translate3d(1, 2.0, 3.0, 10deg);
+        }
+    }
+
+    /* animation_top_bottom */
+    @keyframes bottom_move_heading {
+        from {
+            transform: translateY(-20px) translateX(100px);
+        }
+
+        to {
+            transform: translateY(-80px) translateX(100px);
+        }
+    }
 /* companies_logo */
 
-.companies_logo .company_logo_icon {
-    margin: 0 .5rem;
-    padding: 0 2px;
-}
+    .companies_logo .company_logo_icon {
+        margin: 0 .5rem;
+        padding: 0 2px;
     }
+
+    /*  */
+    .apps_features .apps_features_des {
+        /* justify-content: space-between; */
+        display: inline-block;
+        align-items: center;
+        margin: 1rem 0;
+        text-align: center;
+    }
+    .apps_features .apps_features_des .apps_features_content {
+        max-width:100%;
+    }
+    aside{
+        margin-bottom: 20px;
+    }
+    .Smart_jackpots .col-lg-4{
+        margin: 1rem 0;
+    }
+    .Designed_built .col-lg-6.flex_property.flex-start{
+        align-items: center;
+        text-align: center;
+    }
+}
